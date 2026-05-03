@@ -1,0 +1,16 @@
+# Android Studio / Gradle
+.gradle/
+build/
+*/build/
+
+# Local configuration file (contains SDK path)
+local.properties
+
+# Android Studio files
+/.idea/
+*.iml
+.cxx/
+.externalNativeBuild/
+
+# Kotlin / Java logs
+*.log

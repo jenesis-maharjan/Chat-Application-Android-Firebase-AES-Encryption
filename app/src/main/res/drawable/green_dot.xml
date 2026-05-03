@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Green dot drawable used as online indicator in user list
+    — oval shape makes it a perfect circle when width = height
+    — white stroke separates it cleanly from the profile photo background
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Green fill — same green used in WhatsApp / Messenger style apps -->
+    <solid android:color="#4CAF50" />
+
+    <!-- White border so the dot is visible on any profile photo color -->
+    <stroke
+        android:width="1.5dp"
+        android:color="#FFFFFF" />
+
+</shape>

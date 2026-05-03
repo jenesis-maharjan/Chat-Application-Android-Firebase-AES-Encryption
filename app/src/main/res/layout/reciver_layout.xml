@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Receiver profile image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pro"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/photocamera" />
+
+    <!-- Text message bubble — hidden when photo is shown -->
+    <TextView
+        android:id="@+id/recivertextset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/reciver_shape"
+        android:layout_toRightOf="@id/pro"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/_7sdp"
+        android:text="Jenesis"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- Photo message — hidden when text is shown -->
+    <ImageView
+        android:id="@+id/receiverPhotoMsg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/pro"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:background="@drawable/reciver_shape" />
+
+    <!-- View once label — shown when photo is view once and not yet viewed -->
+    <TextView
+        android:id="@+id/receiverViewOnceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/receiverPhotoMsg"
+        android:layout_toRightOf="@id/pro"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginBottom="4dp"
+        android:background="#99000000"
+        android:text="View Once"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:padding="4dp"
+        android:visibility="gone" />
+
+    <!-- Viewed label — shown after view once photo has been viewed -->
+    <TextView
+        android:id="@+id/receiverViewedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/pro"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:background="@drawable/reciver_shape"
+        android:padding="@dimen/_7sdp"
+        android:text="📷 Viewed"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
