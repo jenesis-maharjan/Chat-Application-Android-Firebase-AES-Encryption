@@ -43,22 +43,13 @@ This project demonstrates real-time communication, authentication, and data secu
 - `login.java` → Handles user authentication
 - `registration.java` → Handles new user signup
 - `chatwindo.java` → Chat interface and messaging logic
+- `AESHelper.java` → Handles encryption and decryption
 - `setting.java` → User settings screen
 - `splash.java` → App launch screen
 - Firebase → Backend services (Auth + Database)
 
 ---
 
-## 📸 Screenshots
-
-> Add your project screenshots here for better presentation
-
-- Login Screen  
-- Registration Screen  
-- Chat Screen  
-- User List Screen  
-
----
 
 ## 🚀 How to Run the Project
 
